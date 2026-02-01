@@ -5,20 +5,14 @@ cask "orikon" do
     sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
 
     url "https://api.github.com/repos/kushtrimm/orikon/releases/assets/349186170",
-        headers: [
-          "Authorization: token #{ENV.fetch("HOMEBREW_GITHUB_API_TOKEN", ENV.fetch("GITHUB_TOKEN", ""))}",
-          "Accept: application/octet-stream"
-        ]
+        header: "Authorization: Bearer #{ENV.fetch("HOMEBREW_GITHUB_API_TOKEN", ENV.fetch("GITHUB_TOKEN", ""))}"
   end
 
   on_intel do
     sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
 
     url "https://api.github.com/repos/kushtrimm/orikon/releases/assets/349186172",
-        headers: [
-          "Authorization: token #{ENV.fetch("HOMEBREW_GITHUB_API_TOKEN", ENV.fetch("GITHUB_TOKEN", ""))}",
-          "Accept: application/octet-stream"
-        ]
+        header: "Authorization: Bearer #{ENV.fetch("HOMEBREW_GITHUB_API_TOKEN", ENV.fetch("GITHUB_TOKEN", ""))}"
   end
 
   name "Orikon"
