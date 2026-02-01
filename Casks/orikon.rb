@@ -3,8 +3,8 @@ cask "orikon" do
 
   arch arm: "arm64", intel: "amd64"
 
-  sha256 arm:   "REPLACE_WITH_ARM64_SHA256",
-         intel: "REPLACE_WITH_AMD64_SHA256"
+  sha256 arm:   "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5",
+         intel: "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
 
   url "https://github.com/kushtrimm/orikon/releases/download/v#{version}/Orikon-darwin-#{arch}.zip"
   name "Orikon"
