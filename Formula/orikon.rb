@@ -11,7 +11,7 @@ class Orikon < Formula
             "Authorization: Bearer #{ENV.fetch("HOMEBREW_GITHUB_API_TOKEN", ENV.fetch("GITHUB_TOKEN", ""))}",
             "Accept: application/octet-stream"
           ]
-      sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+      sha256 "2988c683f3ffee9589a8e6764f3753844e5c7a29e6f87037046a968c7901fc5c"
     end
 
     on_intel do
@@ -20,7 +20,7 @@ class Orikon < Formula
             "Authorization: Bearer #{ENV.fetch("HOMEBREW_GITHUB_API_TOKEN", ENV.fetch("GITHUB_TOKEN", ""))}",
             "Accept: application/octet-stream"
           ]
-      sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+      sha256 "e6bddc047c448184478674249eb7a9e8cfcf5e592eab310afd9d199bf028ce69"
     end
   end
 
