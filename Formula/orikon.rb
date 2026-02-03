@@ -1,26 +1,26 @@
 class Orikon < Formula
   desc "Unified dashboard for Apache Flink jobs across multiple EKS clusters"
   homepage "https://github.com/kushtrimm/orikon"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://api.github.com/repos/kushtrimm/orikon/releases/assets/349186170",
+      url "https://api.github.com/repos/kushtrimm/orikon/releases/assets/349919065",
           headers: [
             "Authorization: Bearer #{ENV.fetch("HOMEBREW_GITHUB_API_TOKEN", ENV.fetch("GITHUB_TOKEN", ""))}",
             "Accept: application/octet-stream"
           ]
-      sha256 "2988c683f3ffee9589a8e6764f3753844e5c7a29e6f87037046a968c7901fc5c"
+      sha256 "229df8201619f4ec7517c4b7fccadaed2a4f2636dc40f29b8d67a8143438f1c2"
     end
 
     on_intel do
-      url "https://api.github.com/repos/kushtrimm/orikon/releases/assets/349186172",
+      url "https://api.github.com/repos/kushtrimm/orikon/releases/assets/349919064",
           headers: [
             "Authorization: Bearer #{ENV.fetch("HOMEBREW_GITHUB_API_TOKEN", ENV.fetch("GITHUB_TOKEN", ""))}",
             "Accept: application/octet-stream"
           ]
-      sha256 "e6bddc047c448184478674249eb7a9e8cfcf5e592eab310afd9d199bf028ce69"
+      sha256 "46dd04ac65b4c7616469722d27d9bd2fe431ae6c0f3a826d4e7b63b6dfe49b8e"
     end
   end
 
